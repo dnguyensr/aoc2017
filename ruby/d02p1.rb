@@ -38,7 +38,6 @@ File.open('./d02input.txt', 'r') do |f|
     arr = line.split(' ').map(&:to_i)
     sum += largest_smallest_diff(arr)
     sum_divisible += largest_smallest_divisible_diff(arr)
-    # p sum_divisible
   end
 
   p 'Sum of the difference of largest and smallest values in each line is:'
